@@ -309,6 +309,9 @@ footer p {
 
 .nav p{
   width: auto;
+  color: #479494;
+  font-weight: 600;
+  font-size: 40px;
 }
 
 .nav a{
