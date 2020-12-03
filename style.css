@@ -286,6 +286,8 @@ footer{
   width: 100vw;
   height: 10vh;
 
+ bottom: 0px;
+
   background-color: #121212;
 }
 
