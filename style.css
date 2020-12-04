@@ -159,6 +159,12 @@ section {
 .link-GLR{
   color: #fff;
 }
+
+.keyboards{
+  margin: 0, auto;
+
+}
+
 /* cards  */
 .card img {
   width: 100px;
