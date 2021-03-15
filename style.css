@@ -125,7 +125,7 @@ p {
 }
 
 blockquote {
-  width: 100vw;
+  width: 90vw;
   display: inline-block;
   color: #f5f5f5;
   border-left: 3px #479494 solid;
@@ -336,6 +336,16 @@ footer p {
 .back{
   text-decoration: none;
   transform: scale(-2);
+}
+
+
+#myChart{
+  width: 80vw!important;
+  height: 80vw!important;
+
+  margin: auto;
+
+  font-size: 10px;
 }
 
 @media only screen and (max-width: 1050px) {
