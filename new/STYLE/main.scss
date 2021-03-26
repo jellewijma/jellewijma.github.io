@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: "Rhodium Libre", serif;
+
+  overflow-x: hidden;
+
+  .home {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1 {
+      width: 100vw;
+      text-align: center;
+      margin: 0px;
+      font-size: 10vw;
+    }
+
+    .arrow {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      img{
+        display: flex;
+        justify-content: center;
+        width: 100px;
+      }
+    }
+  }
+}
