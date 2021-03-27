@@ -146,11 +146,80 @@ body .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .skills .hex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  height: 100vh;
+}
+
+body .skills .hex svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 100vh;
+  left: 10vw;
+  width: 80vw;
+  height: 100vh;
+}
+
+body .skills .hex svg path {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  width: 80vw;
+}
+
+body .skills .hex .front {
+  margin: 0px;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  position: absolute;
+  top: calc(150vh - (($tri-width / 2) * ($tri-width / 2)));
+  width: calc(50vw - $tri-width / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 45vw;
+  height: 50vw;
+  text-align: center;
+  border: 3px solid #191919;
+  font-size: 12vw;
+  -webkit-transform: translate(0, -50vh) rotate(30deg);
+          transform: translate(0, -50vh) rotate(30deg);
 }
 /*# sourceMappingURL=main.css.map */
