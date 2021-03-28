@@ -159,24 +159,6 @@ body .skills .hex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80vw;
-  height: 100vh;
-}
-
-body .skills .hex svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -184,42 +166,105 @@ body .skills .hex svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  top: 100vh;
-  left: 10vw;
-  width: 80vw;
+  width: 70vw;
+}
+
+body .skills .hex svg {
+  width: 70vw;
   height: 100vh;
 }
 
 body .skills .hex svg path {
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  width: 80vw;
+  width: 70vw;
 }
 
 body .skills .hex .front {
   margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
-  position: absolute;
-  top: calc(150vh - (($tri-width / 2) * ($tri-width / 2)));
-  width: calc(50vw - $tri-width / 2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 45vw;
-  height: 50vw;
+  -webkit-transform: translate(-50%, -100%) rotate(30deg);
+          transform: translate(-50%, -100%) rotate(30deg);
+  height: 47vw;
+  width: 40vw;
   text-align: center;
-  border: 3px solid #191919;
-  font-size: 12vw;
-  -webkit-transform: translate(0, -50vh) rotate(30deg);
-          transform: translate(0, -50vh) rotate(30deg);
+  font-size: 10vw;
+}
+
+body .skills .hex .design {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(90deg);
+          transform: translate(-50%, -100%) rotate(90deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 10vw;
+}
+
+body .skills .hex .photo {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(150deg);
+          transform: translate(-50%, -100%) rotate(150deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 10vw;
+}
+
+body .skills .hex .back {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(-30deg);
+          transform: translate(-50%, -100%) rotate(-30deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 10vw;
+}
+
+body .skills .hex .system {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(-90deg);
+          transform: translate(-50%, -100%) rotate(-90deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 9.5vw;
+}
+
+body .skills .hex .managment {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(-150deg);
+          transform: translate(-50%, -100%) rotate(-150deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 5.5vw;
 }
 /*# sourceMappingURL=main.css.map */

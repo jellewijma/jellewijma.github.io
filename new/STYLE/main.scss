@@ -104,9 +104,147 @@ body {
   .skills{
     width: 100vw;
     height: 100vh;
-
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
+    flex-direction: row;
+    justify-content: center;
+
+    .hex{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      width: 70vw;
+
+      svg{
+        width: 70vw;
+        height: 100vh;
+        path{
+          width: 70vw;
+        }
+      }
+    
+      .front{
+        margin: 0px;
+        
+        position: absolute;
+        
+        top: 150vh;
+        left: 50vw;
+
+        transform-origin: bottom center;
+        transform: translate(-50%, -100%) rotate(30deg);
+
+        // border: 3px solid #191919;
+        
+        height: 47vw;
+        width: 40vw;
+
+        text-align: center;
+        font-size: 10vw;
+
+      }
+      .design{
+        margin: 0px;
+        
+        position: absolute;
+        
+        top: 150vh;
+        left: 50vw;
+
+        transform-origin: bottom center;
+        transform: translate(-50%, -100%) rotate(90deg);
+
+        // border: 3px solid #191919;
+        
+        height: 47vw;
+        width: 40vw;
+
+        text-align: center;
+        font-size: 10vw;
+
+      }
+      .photo{
+        margin: 0px;
+        
+        position: absolute;
+        
+        top: 150vh;
+        left: 50vw;
+
+        transform-origin: bottom center;
+        transform: translate(-50%, -100%) rotate(150deg);
+
+        // border: 3px solid #191919;
+        
+        height: 47vw;
+        width: 40vw;
+
+        text-align: center;
+        font-size: 10vw;
+
+      }
+      .back{
+        margin: 0px;
+        
+        position: absolute;
+        
+        top: 150vh;
+        left: 50vw;
+
+        transform-origin: bottom center;
+        transform: translate(-50%, -100%) rotate(-30deg);
+
+        // border: 3px solid #191919;
+        
+        height: 47vw;
+        width: 40vw;
+
+        text-align: center;
+        font-size: 10vw;
+
+      }
+      .system{
+        margin: 0px;
+        
+        position: absolute;
+        
+        top: 150vh;
+        left: 50vw;
+
+        transform-origin: bottom center;
+        transform: translate(-50%, -100%) rotate(-90deg);
+
+        // border: 3px solid #191919;
+        
+        height: 47vw;
+        width: 40vw;
+
+        text-align: center;
+        font-size: 9.5vw;
+
+      }
+      .managment{
+        margin: 0px;
+        
+        position: absolute;
+        
+        top: 150vh;
+        left: 50vw;
+
+        transform-origin: bottom center;
+        transform: translate(-50%, -100%) rotate(-150deg);
+
+        // border: 3px solid #191919;
+        
+        height: 47vw;
+        width: 40vw;
+
+        text-align: center;
+        font-size: 5.5vw;
+      }
+    }
+
+  } 
+
+  
 }
