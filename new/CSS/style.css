@@ -4,39 +4,19 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   background: #f0f0f0;
   overflow-x: hidden;
-  overflow-y: scroll;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  scroll-behavior: smooth;
 }
 
-body .header {
-  height: 100vh;
-  border: 1px solid #000;
-}
-
-body .header .container {
-  background: #f0f0f0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100vw;
-  height: 100vh;
-}
-
-body .header .container .box {
-  margin: 40px;
+body .box {
+  margin: 0 auto;
   border-radius: 20px;
   width: 480px;
   height: 240px;
@@ -48,14 +28,21 @@ body .header .container .box {
   /* animation-fill-mode: forwards; */
 }
 
-body .header .container .box .content {
+body .box .content {
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: none;
 }
 
-body .header .container .box .content .typing-demo {
+body .box .content .typing-demo {
   width: 19ch;
   margin: 0 0 0 20px;
-  margin-top: 20px;
   -webkit-animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
           animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
   -webkit-animation-delay: 0s;
@@ -68,8 +55,8 @@ body .header .container .box .content .typing-demo {
   text-align: center;
 }
 
-body .header .container .box .content .divider {
-  margin-top: 20px;
+body .box .content .divider {
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +69,7 @@ body .header .container .box .content .divider {
           justify-content: space-between;
 }
 
-body .header .container .box .content .divider p {
+body .box .content .divider p {
   margin: auto 0;
   margin-left: 20px;
   max-width: 250px;
@@ -105,7 +92,7 @@ body .header .container .box .content .divider p {
   font-size: 18px;
 }
 
-body .header .container .box .content .divider img {
+body .box .content .divider img {
   -webkit-filter: drop-shadow(0px 0px 10px #9abaf5);
           filter: drop-shadow(0px 0px 10px #9abaf5);
   display: none;
@@ -121,111 +108,17 @@ body .header .container .box .content .divider img {
           animation: fadeInRight 1s;
 }
 
-body .container {
-  background: #f0f0f0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body .pusher-top {
   width: 100vw;
-  height: 100vh;
+  height: calc(50vh - 120px);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-body .container .box {
-  margin: 40px;
-  border-radius: 20px;
-  width: 480px;
-  height: 240px;
-  background: #fafafa;
-  -webkit-box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
-          box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
-  -webkit-animation: anime 2s cubic-bezier(0.16, 1, 0.3, 1);
-          animation: anime 2s cubic-bezier(0.16, 1, 0.3, 1);
-  /* animation-fill-mode: forwards; */
-}
-
-body .container .box .content {
-  display: none;
-}
-
-body .container .box .content .typing-demo {
-  width: 19ch;
-  margin: 0 0 0 20px;
-  margin-top: 20px;
-  -webkit-animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
-          animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-  text-align: center;
-}
-
-body .container .box .content .divider {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body .container .box .content .divider p {
-  margin: auto 0;
-  margin-left: 20px;
-  max-width: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: monospace;
-  -webkit-animation: fadeInLeft 1s;
-          animation: fadeInLeft 1s;
-  font-size: 18px;
-}
-
-body .container .box .content .divider img {
-  -webkit-filter: drop-shadow(0px 0px 10px #9abaf5);
-          filter: drop-shadow(0px 0px 10px #9abaf5);
-  display: none;
-  width: 150px;
-  height: 150px;
-  margin-right: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 0px;
-     object-position: center 0px;
-  border-radius: 20px;
-  -webkit-animation: fadeInRight 1s;
-          animation: fadeInRight 1s;
+body .pusher-bottom {
+  height: calc(50vh - 120px);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 @-webkit-keyframes fadeInRight {
