@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f0f0f0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body .header {
+  height: 100vh;
+  border: 1px solid #000;
+}
+
+body .header .container {
+  background: #f0f0f0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .header .container .box {
+  margin: 40px;
+  border-radius: 20px;
+  width: 480px;
+  height: 240px;
+  background: #fafafa;
+  -webkit-box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+          box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+  -webkit-animation: anime 2s cubic-bezier(0.16, 1, 0.3, 1);
+          animation: anime 2s cubic-bezier(0.16, 1, 0.3, 1);
+  /* animation-fill-mode: forwards; */
+}
+
+body .header .container .box .content {
+  display: none;
+}
+
+body .header .container .box .content .typing-demo {
+  width: 19ch;
+  margin: 0 0 0 20px;
+  margin-top: 20px;
+  -webkit-animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
+          animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  text-align: center;
+}
+
+body .header .container .box .content .divider {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .header .container .box .content .divider p {
+  margin: auto 0;
+  margin-left: 20px;
+  max-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: monospace;
+  -webkit-animation: fadeInLeft 1s;
+          animation: fadeInLeft 1s;
+  font-size: 18px;
+}
+
+body .header .container .box .content .divider img {
+  -webkit-filter: drop-shadow(0px 0px 10px #9abaf5);
+          filter: drop-shadow(0px 0px 10px #9abaf5);
+  display: none;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 0px;
+     object-position: center 0px;
+  border-radius: 20px;
+  -webkit-animation: fadeInRight 1s;
+          animation: fadeInRight 1s;
+}
+
+body .container {
+  background: #f0f0f0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .container .box {
+  margin: 40px;
+  border-radius: 20px;
+  width: 480px;
+  height: 240px;
+  background: #fafafa;
+  -webkit-box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+          box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+  -webkit-animation: anime 2s cubic-bezier(0.16, 1, 0.3, 1);
+          animation: anime 2s cubic-bezier(0.16, 1, 0.3, 1);
+  /* animation-fill-mode: forwards; */
+}
+
+body .container .box .content {
+  display: none;
+}
+
+body .container .box .content .typing-demo {
+  width: 19ch;
+  margin: 0 0 0 20px;
+  margin-top: 20px;
+  -webkit-animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
+          animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  text-align: center;
+}
+
+body .container .box .content .divider {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .box .content .divider p {
+  margin: auto 0;
+  margin-left: 20px;
+  max-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: monospace;
+  -webkit-animation: fadeInLeft 1s;
+          animation: fadeInLeft 1s;
+  font-size: 18px;
+}
+
+body .container .box .content .divider img {
+  -webkit-filter: drop-shadow(0px 0px 10px #9abaf5);
+          filter: drop-shadow(0px 0px 10px #9abaf5);
+  display: none;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 0px;
+     object-position: center 0px;
+  border-radius: 20px;
+  -webkit-animation: fadeInRight 1s;
+          animation: fadeInRight 1s;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@-webkit-keyframes anime {
+  0% {
+    width: 60px;
+    height: 60px;
+    background: #f0f0f0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  25% {
+    width: 60px;
+    height: 60px;
+    background: #f8f8f8;
+    -webkit-box-shadow: 0px 0px 10px #cccccc, 2.5px 2.5px 2.5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+            box-shadow: 0px 0px 10px #cccccc, 2.5px 2.5px 2.5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+  }
+  50% {
+    width: 60px;
+    height: 240px;
+    background: #f8f8f8;
+    -webkit-box-shadow: 0px 0px 10px #cccccc, 2.5px 2.5px 2.5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+            box-shadow: 0px 0px 10px #cccccc, 2.5px 2.5px 2.5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+  }
+  100% {
+    width: 480px;
+    height: 240px;
+    background: #fafafa;
+    -webkit-box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+            box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+  }
+}
+
+@keyframes anime {
+  0% {
+    width: 60px;
+    height: 60px;
+    background: #f0f0f0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  25% {
+    width: 60px;
+    height: 60px;
+    background: #f8f8f8;
+    -webkit-box-shadow: 0px 0px 10px #cccccc, 2.5px 2.5px 2.5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+            box-shadow: 0px 0px 10px #cccccc, 2.5px 2.5px 2.5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+  }
+  50% {
+    width: 60px;
+    height: 240px;
+    background: #f8f8f8;
+    -webkit-box-shadow: 0px 0px 10px #cccccc, 2.5px 2.5px 2.5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+            box-shadow: 0px 0px 10px #cccccc, 2.5px 2.5px 2.5px #ffffff, 0 0 0 #cccccc inset, 0 0 0 #ffffff inset;
+  }
+  100% {
+    width: 480px;
+    height: 240px;
+    background: #fafafa;
+    -webkit-box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+            box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset, 2px 2px 2px #ffffff inset;
+  }
+}
+/*# sourceMappingURL=style.css.map */

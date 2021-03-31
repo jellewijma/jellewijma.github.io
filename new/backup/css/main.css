@@ -172,10 +172,17 @@ body .skills .hex {
 body .skills .hex svg {
   width: 70vw;
   height: 100vh;
+  z-index: 0;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 body .skills .hex svg path {
   width: 70vw;
+  z-index: 2;
+  fill: #FFF;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 body .skills .hex .front {
@@ -191,6 +198,11 @@ body .skills .hex .front {
   width: 40vw;
   text-align: center;
   font-size: 10vw;
+  z-index: 0;
+}
+
+body .skills .hex .front:hover {
+  background-color: aqua;
 }
 
 body .skills .hex .design {
@@ -206,6 +218,7 @@ body .skills .hex .design {
   width: 40vw;
   text-align: center;
   font-size: 10vw;
+  z-index: 1;
 }
 
 body .skills .hex .photo {
@@ -221,6 +234,7 @@ body .skills .hex .photo {
   width: 40vw;
   text-align: center;
   font-size: 10vw;
+  z-index: 1;
 }
 
 body .skills .hex .back {
@@ -236,6 +250,7 @@ body .skills .hex .back {
   width: 40vw;
   text-align: center;
   font-size: 10vw;
+  z-index: 1;
 }
 
 body .skills .hex .system {
@@ -251,6 +266,7 @@ body .skills .hex .system {
   width: 40vw;
   text-align: center;
   font-size: 9.5vw;
+  z-index: 1;
 }
 
 body .skills .hex .managment {
@@ -266,5 +282,6 @@ body .skills .hex .managment {
   width: 40vw;
   text-align: center;
   font-size: 5.5vw;
+  z-index: 1;
 }
 /*# sourceMappingURL=main.css.map */
