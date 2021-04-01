@@ -78,12 +78,12 @@ body {
       }
     }
   }
-  .pusher-top {
+  #pusher-top {
     width: 100vw;
     height: calc(50vh - 120px);
     transition: 0.2s;
   }
-  .pusher-bottom {
+  #pusher-bottom {
     height: calc(50vh - 120px);
     transition: 0.2s;
   }
