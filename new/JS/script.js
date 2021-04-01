@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   setTimeout(function () {
     // document.getElementsByClassName('content').style.display= "block";
     $(".content").css("display", "flex");
@@ -11,6 +10,7 @@ $(document).ready(function () {
 
   window.onscroll = function() {scrollFunction()};
 
+  console.log(window.innerHeight)
   window.scrollTo(0,0);
   function scrollFunction() {
     // get the current scroll position
