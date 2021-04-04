@@ -14,6 +14,8 @@ body {
   left: 0px;
   scroll-behavior: smooth;
 
+  // filter: blur(50px);
+
   .box {
     margin: 0 auto;
     border-radius: 20px;
@@ -31,14 +33,29 @@ body {
       flex-direction: column;
       display: none;
 
-      .typing-demo {
-        width: 19ch;
+      .title {
+        width: 100%;
         margin: 0 0 0 20px;
-        animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
+
         animation-delay: 0s;
         white-space: nowrap;
         overflow: hidden;
+
+        font-family: monospace;
+        font-size: 2em;
+        text-align: center;
+      }
+
+      #chCount{
+        width: 19ch;
+        animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
+        animation-delay: 0s;
         border-right: 3px solid;
+        margin: 0 0 0 20px;
+        animation-delay: 0s;
+        white-space: nowrap;
+        overflow: hidden;
+
         font-family: monospace;
         font-size: 2em;
         text-align: center;
@@ -49,6 +66,13 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        .pr{
+          min-width:480px;
+          height: 200px;
+          img{
+            display: flex;
+          }
+        }
         p {
           margin: auto 0;
           margin-left: 20px;
@@ -60,8 +84,11 @@ body {
           font-family: monospace;
           animation: fadeInLeft 1s;
           font-size: 18px;
+          span{
+            white-space: nowrap;
+          }
         }
-        img {
+        .profile {
           filter: drop-shadow(0px 0px 10px #9abaf5);
           display: none;
           width: 150px;
@@ -75,17 +102,19 @@ body {
 
           animation: fadeInRight 1s;
         }
+        img{
+          width: 150px;
+          height: 150px;
+        }
       }
     }
   }
   #pusher-top {
     width: 100vw;
     height: calc(50vh - 120px);
-    transition: 0.2s;
   }
   #pusher-bottom {
     height: calc(50vh - 120px);
-    transition: 0.2s;
   }
 }
 

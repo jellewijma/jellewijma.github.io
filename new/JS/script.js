@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   setTimeout(function () {
     // document.getElementsByClassName('content').style.display= "block";
     $(".content").css("display", "flex");
@@ -27,4 +26,5 @@ $(document).ready(function () {
         document.getElementById('pusher-bottom').style.height = `calc(${minus}vh - 120px)`;
       }
   }
+
 });
