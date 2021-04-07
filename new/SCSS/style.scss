@@ -14,78 +14,121 @@ body {
   left: 0px;
   scroll-behavior: smooth;
 
-  .box {
-    margin: 0 auto;
-    border-radius: 20px;
-    width: 480px;
-    height: 240px;
-    background: #fafafa;
-    box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset,
-      2px 2px 2px #ffffff inset;
-    animation: anime 2s cubic-bezier(0.16, 1, 0.3, 1);
-    /* animation-fill-mode: forwards; */
-
-    .content {
-      height: 100%;
-      justify-content: space-evenly;
-      flex-direction: column;
-      display: none;
-
-      .typing-demo {
-        width: 19ch;
-        margin: 0 0 0 20px;
-        animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
-        animation-delay: 0s;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid;
+  .card{
+    width: 100vw;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .box {
+      margin: 0 auto;
+      border-radius: 20px;
+      width: 480px;
+      height: 240px;
+      background: #fafafa;
+      box-shadow: 0px 0px 20px #cccccc, 0 0 0 #ffffff, 0 0 0 #cccccc inset,
+        2px 2px 2px #ffffff inset;
+      animation: anime 2s cubic-bezier(0.16, 1, 0.3, 1);
+      /* animation-fill-mode: forwards; */
+  
+      .content {
+        height: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        display: none;
         font-family: monospace;
-        font-size: 2em;
-        text-align: center;
-      }
-
-      .divider {
-        height: 150px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        p {
-          margin: auto 0;
-          margin-left: 20px;
-          max-width: 250px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          font-family: monospace;
-          animation: fadeInLeft 1s;
-          font-size: 18px;
+  
+        h2{
+          width: 100%;
+          text-align: center;
+          font-size: 26px;
         }
-        img {
-          filter: drop-shadow(0px 0px 10px #9abaf5);
-          display: none;
-          width: 150px;
-          height: 150px;
 
+        p{
+          font-size: 18px;
+          margin-left: 20px;
           margin-right: 20px;
 
-          object-fit: cover;
-          object-position: center 0px;
-          border-radius: 20px;
-
-          animation: fadeInRight 1s;
+          a{
+            font-size: 18px;
+            text-decoration: none;
+            color: #60acdf;
+          }
         }
+
+        a{
+          font-size: 18px;
+          margin-left: 20px;
+        }
+
+        .typing-demo {
+          width: 19ch;
+          margin: 0 0 0 20px;
+          animation: typing 1.7s steps(19), blink 0.5s step-end infinite alternate;
+          animation-delay: 0s;
+          white-space: nowrap;
+          overflow: hidden;
+          border-right: 3px solid;
+          font-family: monospace;
+          font-size: 2em;
+          text-align: center;
+        }
+  
+        .divider {
+          height: 150px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          p {
+            margin: auto 0;
+            margin-left: 20px;
+            max-width: 275px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+            animation: fadeInLeft 1s;
+            font-size: 18px;
+            vertical-align: text-bottom;
+          }
+          img {
+            filter: drop-shadow(0px 0px 10px #9abaf5);
+            display: none;
+            width: 150px;
+            height: 150px;
+  
+            margin-right: 20px;
+  
+            object-fit: cover;
+            object-position: center 0px;
+            border-radius: 20px;
+  
+            animation: fadeInRight 1s;
+          }
+        }
+      }
+      &:hover{
+        width: 528px;
+        height: 264px;
+        transition: .5s;
+      }
+      transition: .5s;
+
+      form{
+        width: 100%;
+        height: 70%;
       }
     }
   }
+
+  
   #pusher-top {
     width: 100vw;
     height: calc(50vh - 120px);
-    transition: 0.2s;
   }
   #pusher-bottom {
     height: calc(50vh - 120px);
-    transition: 0.2s;
   }
 }
 
