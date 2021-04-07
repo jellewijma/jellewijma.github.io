@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Rhodium Libre", serif;
+  overflow-x: hidden;
+}
+
+body .menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+body .menu .ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body .menu .hamRotate.active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body .menu .hamRotate180.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body .menu .line {
+  fill: none;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+body .menu .ham8 .top {
+  stroke-dasharray: 40 160;
+}
+
+body .menu .ham8 .middle {
+  stroke-dasharray: 40 142;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+body .menu .ham8 .bottom {
+  stroke-dasharray: 25 85;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: stroke-dashoffset 400ms, -webkit-transform 400ms;
+  transition: stroke-dashoffset 400ms, -webkit-transform 400ms;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+  transition: transform 400ms, stroke-dashoffset 400ms, -webkit-transform 400ms;
+}
+
+body .menu .ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+
+body .menu .ham8.active .middle {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+body .menu .ham8.active .bottom {
+  stroke-dashoffset: -60px;
+}
+
+body .home {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .home h1 {
+  width: 100vw;
+  text-align: center;
+  margin: 0px;
+  font-size: 10vw;
+}
+
+body .home .arrow {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .home .arrow img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+}
+
+body .skills {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .skills .hex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70vw;
+}
+
+body .skills .hex svg {
+  width: 70vw;
+  height: 100vh;
+  z-index: 0;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+body .skills .hex svg path {
+  width: 70vw;
+  z-index: 2;
+  fill: #FFF;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+body .skills .hex .front {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(30deg);
+          transform: translate(-50%, -100%) rotate(30deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 10vw;
+  z-index: 0;
+}
+
+body .skills .hex .front:hover {
+  background-color: aqua;
+}
+
+body .skills .hex .design {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(90deg);
+          transform: translate(-50%, -100%) rotate(90deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 10vw;
+  z-index: 1;
+}
+
+body .skills .hex .photo {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(150deg);
+          transform: translate(-50%, -100%) rotate(150deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 10vw;
+  z-index: 1;
+}
+
+body .skills .hex .back {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(-30deg);
+          transform: translate(-50%, -100%) rotate(-30deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 10vw;
+  z-index: 1;
+}
+
+body .skills .hex .system {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(-90deg);
+          transform: translate(-50%, -100%) rotate(-90deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 9.5vw;
+  z-index: 1;
+}
+
+body .skills .hex .managment {
+  margin: 0px;
+  position: absolute;
+  top: 150vh;
+  left: 50vw;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: translate(-50%, -100%) rotate(-150deg);
+          transform: translate(-50%, -100%) rotate(-150deg);
+  height: 47vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 5.5vw;
+  z-index: 1;
+}
+/*# sourceMappingURL=main.css.map */
