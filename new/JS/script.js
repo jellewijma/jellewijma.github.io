@@ -27,4 +27,5 @@ $(document).ready(function () {
         document.getElementById('pusher-bottom').style.height = `calc(${minus}vh - 120px)`;
       }
   }
+
 });
