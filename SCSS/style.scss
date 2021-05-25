@@ -17,6 +17,59 @@ body {
   top: 0px;
   left: 0px;
   scroll-behavior: smooth;
+  font-family: monospace;
+
+
+  .background-new-level{
+    width: 0px;
+    height: 0px;
+
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+
+    z-index: 10;
+
+    background-color: #e2d8ac;
+    overflow: hidden;
+
+    // border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+
+    .nav{
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .back{
+        border: 1px #000 solid;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px;
+
+        cursor: pointer;
+
+        z-index: 11;
+      }
+    }
+
+    .detail{
+      width: 90vw;
+      height: min-content;
+
+      margin: 0 auto;
+      padding: 20px;
+
+      border-left: 1px solid #000;
+
+      h2{
+        font-size: 40px;
+      }
+    }
+  }
+
 
   .card{
     width: 100vw;
@@ -42,7 +95,6 @@ body {
         justify-content: space-evenly;
         flex-direction: column;
         display: none;
-        font-family: monospace;
   
         h2{
           width: 100%;
@@ -76,7 +128,6 @@ body {
           white-space: nowrap;
           overflow: hidden;
           border-right: 3px solid;
-          font-family: monospace;
           font-size: 2em;
           text-align: center;
         }
@@ -94,7 +145,6 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            font-family: monospace;
             animation: fadeInLeft 1s;
             font-size: 18px;
             vertical-align: text-bottom;

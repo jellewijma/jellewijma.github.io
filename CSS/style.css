@@ -18,6 +18,59 @@ body {
   top: 0px;
   left: 0px;
   scroll-behavior: smooth;
+  font-family: monospace;
+}
+
+body .background-new-level {
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  z-index: 10;
+  background-color: #e2d8ac;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .background-new-level .nav {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .background-new-level .nav .back {
+  border: 1px #000 solid;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+body .background-new-level .detail {
+  width: 90vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 0 auto;
+  padding: 20px;
+  border-left: 1px solid #000;
+}
+
+body .background-new-level .detail h2 {
+  font-size: 40px;
 }
 
 body .card {
@@ -62,7 +115,6 @@ body .card .box .content {
       -ms-flex-direction: column;
           flex-direction: column;
   display: none;
-  font-family: monospace;
 }
 
 body .card .box .content h2 {
@@ -99,7 +151,6 @@ body .card .box .content .typing-demo {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
   font-size: 2em;
   text-align: center;
 }
@@ -135,7 +186,6 @@ body .card .box .content .divider p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: monospace;
   -webkit-animation: fadeInLeft 1s;
           animation: fadeInLeft 1s;
   font-size: 18px;
